@@ -396,9 +396,9 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 
 <br>
 <div style="backgroud-color:black">
-<button onclick="atualizar()" class="btn btn-outline-primary" style="backgroud-color:black">Total </button>
-<button id="btnFilterReg"," onclick="atualizeRegs()" class="btn btn-outline-primary" style="backgroud-color:black">Filtrar Regiões </button>
+<button onclick="atualizar()" class="btn btn-outline-primary" style="backgroud-color:blue">Total </button>
 <button id="btnFilterReg"," onclick="atualizeBra()" class="btn btn-outline-primary" style="backgroud-color:black">Filtrar Brasil </button>
+<button id="btnFilterReg"," onclick="atualizeRegs()" class="btn btn-outline-primary" style="backgroud-color:black">Filtrar Regiões </button>
 <button id="btnFilterReg"," onclick="atualizeEst()" class="btn btn-outline-primary" style="backgroud-color:black">Filtrar Estados </button>
 <button id="btnFilterReg"," onclick="atualizeMuni()" class="btn btn-outline-primary" style="backgroud-color:black">Filtrar Cidades </button>
 <button id="btnFilterReg"," onclick="exportaExcel('data-table','download')" class="btn btn-outline-success" style="backgroud-color:black">Download </button>
@@ -772,7 +772,7 @@ fetch(url)
 </script>
 <script>
 
-var regs=["Norte","Nordeste","Sul","Suldeste","Centro-Oeste"]
+var regs=["Norte","Nordeste","Sul","Sudeste","Centro-Oeste"]
 function atualizeRegs(){
 document.getElementById("data-table").innerHTML=""
 let serie= document.getElementById("select_serie").value
